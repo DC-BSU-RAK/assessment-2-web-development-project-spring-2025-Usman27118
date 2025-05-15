@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus Gaming | Reviews</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Nexus Gaming" />
+          <h1>Nexus Gaming</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li class="active"><a href="reviews.html">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <div class="search-bar">
+          <input type="text" placeholder="Search reviews..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Game Reviews</h1>
+        <p>Honest, in-depth reviews of the latest games</p>
+      </div>
+    </section>
+
+    <section class="reviews-content">
+      <div class="container">
+        <div class="review-filters">
+          <div class="filter-group">
+            <label for="platform">Platform:</label>
+            <select id="platform">
+              <option value="all">All Platforms</option>
+              <option value="pc">PC</option>
+              <option value="ps5">PlayStation 5</option>
+              <option value="xsx">Xbox Series X</option>
+              <option value="switch">Nintendo Switch</option>
+              <option value="mobile">Mobile</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="genre">Genre:</label>
+            <select id="genre">
+              <option value="all">All Genres</option>
+              <option value="action">Action</option>
+              <option value="rpg">RPG</option>
+              <option value="fps">FPS</option>
+              <option value="strategy">Strategy</option>
+              <option value="sports">Sports</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="score">Minimum Score:</label>
+            <select id="score">
+              <option value="0">Any</option>
+              <option value="7">7+</option>
+              <option value="8">8+</option>
+              <option value="9">9+</option>
+            </select>
+          </div>
+          <button class="btn-small">Apply Filters</button>
+        </div>
+
+        <div class="featured-review">
+          <div class="review-header">
+            <div class="game-cover">
+              <img src="images/Diablo_IV.png" alt="Diablo IV" />
+              <div class="score">9.5</div>
+            </div>
+            <div class="review-meta">
+              <h2>Diablo IV</h2>
+              <div class="platforms">
+                <span class="platform pc"
+                  ><i class="fab fa-windows"></i> PC</span
+                >
+                <span class="platform ps5"
+                  ><i class="fab fa-playstation"></i> PS5</span
+                >
+                <span class="platform xsx"
+                  ><i class="fab fa-xbox"></i> XSX</span
+                >
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="reviewer">
+                Reviewed by Jessica Martinez | June 10, 2023
+              </p>
+            </div>
+          </div>
+          <div class="review-body">
+            <h3>A Hellish Good Time</h3>
+            <p>
+              Diablo IV represents a triumphant return to form for Blizzard's
+              iconic action-RPG series. The game masterfully blends the best
+              elements of Diablo II's dark, gothic atmosphere with Diablo III's
+              refined combat mechanics, creating an experience that feels both
+              fresh and familiar...
+            </p>
+            <div class="pros-cons">
+              <div class="pros">
+                <h4>Pros</h4>
+                <ul>
+                  <li>Gorgeous, dark art direction</li>
+                  <li>Deep character customization</li>
+                  <li>Engaging endgame content</li>
+                  <li>Excellent multiplayer integration</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <h4>Cons</h4>
+                <ul>
+                  <li>Some server issues at launch</li>
+                  <li>Inventory management could be better</li>
+                  <li>Story has some pacing issues</li>
+                </ul>
+              </div>
+            </div>
+            <a
+              href="https://www.wired.com/story/diablo-iv-review-impressions/"
+              class="btn"
+              >Read Full Review</a
+            >
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <img src="images/street_fighter.png" alt="Street Fighter 6" />
+            <div class="review-card-content">
+              <h3>Street Fighter 6</h3>
+              <div class="score">9.0</div>
+              <div class="platforms">
+                <span class="platform pc"><i class="fab fa-windows"></i></span>
+                <span class="platform ps5"
+                  ><i class="fab fa-playstation"></i
+                ></span>
+                <span class="platform xsx"><i class="fab fa-xbox"></i></span>
+              </div>
+              <p>
+                The best fighting game in years with incredible depth and
+                accessibility.
+              </p>
+              <a
+                href="https://www.pcgamer.com/street-fighter-6-review/"
+                class="btn"
+                >Read Review</a
+              >
+            </div>
+          </div>
+          <div class="review-card">
+            <img
+              src="images/Zelda.png"
+              alt="The Legend of Zelda: Tears of the Kingdom"
+            />
+            <div class="review-card-content">
+              <h3>Zelda: Tears of the Kingdom</h3>
+              <div class="score">10</div>
+              <div class="platforms">
+                <span class="platform switch"
+                  ><i class="fas fa-gamepad"></i
+                ></span>
+              </div>
+              <p>
+                A masterpiece that builds upon Breath of the Wild in every way
+                imaginable.
+              </p>
+              <a
+                href="https://www.slantmagazine.com/games/the-legend-of-zelda-tears-of-the-kingdom-review/"
+                class="btn"
+                >Read Review</a
+              >
+            </div>
+          </div>
+          <div class="review-card">
+            <img src="images/Final_Fantasy_XVI.webp" alt="Final Fantasy XVI" />
+            <div class="review-card-content">
+              <h3>Final Fantasy XVI</h3>
+              <div class="score">8.8</div>
+              <div class="platforms">
+                <span class="platform ps5"
+                  ><i class="fab fa-playstation"></i
+                ></span>
+              </div>
+              <p>
+                A bold new direction for the series with spectacular action
+                combat.
+              </p>
+              <a
+                href="https://www.rpgfan.com/review/final-fantasy-xvi-2/"
+                class="btn"
+                >Read Review</a
+              >
+            </div>
+          </div>
+          <div class="review-card">
+            <img src="images/Star_war.png" alt="Star Wars Jedi: Survivor" />
+            <div class="review-card-content">
+              <h3>Star Wars Jedi: Survivor</h3>
+              <div class="score">8.5</div>
+              <div class="platforms">
+                <span class="platform pc"><i class="fab fa-windows"></i></span>
+                <span class="platform ps5"
+                  ><i class="fab fa-playstation"></i
+                ></span>
+                <span class="platform xsx"><i class="fab fa-xbox"></i></span>
+              </div>
+              <p>
+                Improves upon Fallen Order in nearly every way despite technical
+                issues.
+              </p>
+              <a
+                href="https://www.pcgamesn.com/star-wars-jedi-survivor/review"
+                class="btn"
+                >Read Review</a
+              >
+            </div>
+          </div>
+          <div class="review-card">
+            <img src="images/Hogwarts_Legacy.png" alt="Hogwarts Legacy" />
+            <div class="review-card-content">
+              <h3>Hogwarts Legacy</h3>
+              <div class="score">8.0</div>
+              <div class="platforms">
+                <span class="platform pc"><i class="fab fa-windows"></i></span>
+                <span class="platform ps5"
+                  ><i class="fab fa-playstation"></i
+                ></span>
+                <span class="platform xsx"><i class="fab fa-xbox"></i></span>
+              </div>
+              <p>
+                A magical open-world adventure that finally delivers the Harry
+                Potter game fans have wanted.
+              </p>
+              <a
+                href="https://www.wired.com/review/hogwarts-legacy-review/"
+                class="btn"
+                >Read Review</a
+              >
+            </div>
+          </div>
+          <div class="review-card">
+            <img
+              src="images/Resident_Evil_4.png"
+              alt="Resident Evil 4 Remake"
+            />
+            <div class="review-card-content">
+              <h3>Resident Evil 4 Remake</h3>
+              <div class="score">9.5</div>
+              <div class="platforms">
+                <span class="platform pc"><i class="fab fa-windows"></i></span>
+                <span class="platform ps5"
+                  ><i class="fab fa-playstation"></i
+                ></span>
+                <span class="platform xsx"><i class="fab fa-xbox"></i></span>
+              </div>
+              <p>
+                A near-perfect remake that honors the original while making
+                smart modern improvements.
+              </p>
+              <a
+                href="https://www.npr.org/2023/03/17/1164084901/resident-evil-4-remake-review"
+                class="btn"
+                >Read Review</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-guidelines">
+      <div class="container">
+        <h2>Our Review Guidelines</h2>
+        <div class="guidelines-grid">
+          <div class="guideline">
+            <i class="fas fa-balance-scale"></i>
+            <h3>Fair & Balanced</h3>
+            <p>
+              We evaluate games based on their own merits, considering both
+              strengths and weaknesses.
+            </p>
+          </div>
+          <div class="guideline">
+            <i class="fas fa-clock"></i>
+            <h3>Time Invested</h3>
+            <p>
+              Our reviewers spend significant time with each game, often
+              completing main stories and side content.
+            </p>
+          </div>
+          <div class="guideline">
+            <i class="fas fa-user-shield"></i>
+            <h3>No Spoilers</h3>
+            <p>
+              We avoid major story spoilers while still providing meaningful
+              analysis.
+            </p>
+          </div>
+          <div class="guideline">
+            <i class="fas fa-sliders-h"></i>
+            <h3>Multiple Platforms</h3>
+            <p>
+              When possible, we review games on multiple platforms to assess
+              performance differences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
