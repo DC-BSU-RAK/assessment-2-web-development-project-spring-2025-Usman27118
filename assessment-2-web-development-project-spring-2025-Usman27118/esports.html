@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUBG Esports - Official Website</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/images/Logo.jpg" alt="PUBG Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gameplay.html">Gameplay</a></li>
+          <li><a href="maps.html">Maps</a></li>
+          <li class="active"><a href="esports.html">Esports</a></li>
+        </ul>
+      </nav>
+      <div class="cta-button">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.tencent.ig&hl=en-us&pli=1"
+          class="btn"
+          >Download Now</a
+        >
+      </div>
+    </header>
+
+    <section class="esports-hero">
+      <div class="esports-hero-content">
+        <h1>PUBG Esports</h1>
+        <p>Witness the highest level of competitive battle royale</p>
+      </div>
+    </section>
+
+    <section class="esports-intro">
+      <h2>The Competitive Scene</h2>
+      <p>
+        PUBG Esports features professional teams from around the world competing
+        in regional and global tournaments with millions of dollars in prize
+        money. The competitive format tests teams' strategy, teamwork, and
+        survival skills.
+      </p>
+    </section>
+
+    <section class="tournaments-section">
+      <h2>Upcoming Tournaments</h2>
+      <div class="tournaments-grid">
+        <div class="tournament-card">
+          <div class="tournament-image">
+            <img src="assets/images/Championship.webp" alt="PGC 2024" />
+            <div class="tournament-date">
+              <span class="day">15</span>
+              <span class="month">Nov</span>
+              <span class="year">2024</span>
+            </div>
+          </div>
+          <div class="tournament-info">
+            <h3>PUBG Global Championship 2024</h3>
+            <p class="location">
+              <i class="fas fa-map-marker-alt"></i> Bangkok, Thailand
+            </p>
+            <p class="prize">
+              <i class="fas fa-trophy"></i> $2,000,000 Prize Pool
+            </p>
+            <a href="https://pubgesports.com/en/news/8063" class="btn btn-small"
+              >More Info</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="teams-section">
+      <h2>Top Team</h2>
+      <div class="teams-carousel">
+        <div class="team-card">
+          <img src="assets/images/R.jpeg" alt="Natus Vincere" />
+          <h3>Natus Vincere</h3>
+          <div class="team-stats">
+            <p><span>Region:</span> Europe</p>
+            <p><span>Earnings:</span> $1,240,000</p>
+            <p><span>World Rank:</span> #1</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stream-section">
+      <h2>Watch Live</h2>
+      <div class="stream-container">
+        <div class="stream-video">
+          <iframe
+            src="https://www.twitch.tv/embed/pubg/chat?parent=www.example.com"
+            frameborder="0"
+            allowfullscreen="true"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <div class="stream-schedule">
+          <h3>Broadcast Schedule</h3>
+          <ul class="schedule-list">
+            <li>
+              <span class="schedule-time">18:00 GMT</span>
+              <span class="schedule-event">PCS6 Europe Day 1</span>
+            </li>
+            <li>
+              <span class="schedule-time">20:00 GMT</span>
+              <span class="schedule-event">PCS6 Asia Day 1</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <h2>Player Statistics</h2>
+      <div class="stats-filters">
+        <select id="region-filter">
+          <option value="all">All Regions</option>
+          <option value="na">North America</option>
+          <option value="eu">Europe</option>
+          <option value="as">Asia</option>
+        </select>
+        <select id="stat-filter">
+          <option value="kills">Most Kills</option>
+          <option value="damage">Most Damage</option>
+          <option value="headshots">Headshot %</option>
+        </select>
+      </div>
+      <div class="stats-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Player</th>
+              <th>Team</th>
+              <th>Kills</th>
+              <th>Damage</th>
+              <th>Headshot %</th>
+            </tr>
+          </thead>
+          <tbody id="stats-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="assets/jss/style.js"></script>
+  </body>
+</html>

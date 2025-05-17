@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUBG Maps - Official Website</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/images/Logo.jpg" alt="PUBG Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gameplay.html">Gameplay</a></li>
+          <li class="active"><a href="maps.html">Maps</a></li>
+          <li><a href="esports.html">Esports</a></li>
+        </ul>
+      </nav>
+      <div class="cta-button">
+        <a href="#" class="btn">Download Now</a>
+      </div>
+    </header>
+
+    <section class="maps-hero">
+      <div class="maps-hero-content">
+        <h1>PUBG Maps</h1>
+        <p>
+          Explore diverse battlegrounds, each with unique strategies and
+          challenges
+        </p>
+      </div>
+    </section>
+
+    <section class="maps-intro">
+      <h2>Choose Your Battleground</h2>
+      <p>
+        PUBG features multiple maps, each with distinct geography, loot
+        distribution, and gameplay dynamics. Mastering each map's unique
+        characteristics is key to achieving that Chicken Dinner.
+      </p>
+    </section>
+
+    <section class="maps-gallery">
+      <div class="map-card">
+        <img src="assets/images/erangle.jpg" alt="Erangel" class="map-image" />
+        <div class="map-overlay">
+          <h3>Erangel</h3>
+          <p>
+            The original 8x8 km map featuring a mix of rural areas and military
+            installations
+          </p>
+          <button onclick="openMapModal('erangel')">View Details</button>
+        </div>
+      </div>
+      <div class="map-card">
+        <img src="assets/images/miramar.jpg" alt="Miramar" class="map-image" />
+        <div class="map-overlay">
+          <h3>Miramar</h3>
+          <p>
+            A desert map with urban areas and rugged terrain favoring long-range
+            combat
+          </p>
+          <button onclick="openMapModal('miramar')">View Details</button>
+        </div>
+      </div>
+      <div class="map-card">
+        <img src="assets/images/sanhok.jpeg" alt="Miramar" class="map-image" />
+        <div class="map-overlay">
+          <h3>Sanhok</h3>
+          <p>
+            Sanhok is one of the most popular maps in PlayerUnknown’s
+            Battlegrounds (PUBG), known for its fast-paced gameplay, dense
+            jungle terrain, and close-quarters combat
+          </p>
+          <button onclick="openMapModal('miramar')">View Details</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-comparison">
+      <h2>Map Comparison</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Map</th>
+            <th>Size</th>
+            <th>Terrain</th>
+            <th>Vehicle Availability</th>
+            <th>Best For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Erangel</td>
+            <td>8x8 km</td>
+            <td>Mixed (fields, forests, urban)</td>
+            <td>High</td>
+            <td>Balanced gameplay</td>
+          </tr>
+          <tr>
+            <td>Miramar</td>
+            <td>8x8 km</td>
+            <td>Desert, mountains, urban</td>
+            <td>Medium</td>
+            <td>Long-range combat</td>
+          </tr>
+          <tr>
+            <td>Sanhok</td>
+            <td>4x4 km</td>
+            <td>fields, forests, urban</td>
+            <td>Medium</td>
+            <td>High-Action Gameplay</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="interactive-map">
+      <h2>Interactive Erangel Map</h2>
+      <div id="map-container">
+        <div id="mapid"></div>
+        <div class="map-controls">
+          <button onclick="showLootLocations()">Show Loot Locations</button>
+          <button onclick="showVehicleSpawns()">Show Vehicle Spawns</button>
+          <button onclick="showHotDrops()">Show Hot Drop Zones</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="mapModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeMapModal()">&times;</span>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="assets/jss/style.js"></script>
+  </body>
+</html>

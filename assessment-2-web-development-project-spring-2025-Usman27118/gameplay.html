@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUBG Gameplay - Official Website</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="assets/images/Logo.jpg"
+          alt="PUBG Logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="active"><a href="gameplay.html">Gameplay</a></li>
+          <li><a href="maps.html">Maps</a></li>
+          <li><a href="esports.html">Esports</a></li>
+        </ul>
+      </nav>
+      <div class="cta-button">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.tencent.ig&hl=en-us&pli=1"
+          class="btn"
+          >Download Now</a
+        >
+      </div>
+    </header>
+
+    <section class="gameplay-hero">
+      <div class="gameplay-hero-content">
+        <h1>PUBG Gameplay</h1>
+        <p>
+          Master the art of survival in the ultimate battle royale experience
+        </p>
+      </div>
+    </section>
+
+    <section class="gameplay-mechanics">
+      <h2>Core Game Mechanics</h2>
+      <div class="mechanics-grid">
+        <div class="mechanic-card">
+          <div class="mechanic-icon">
+            <i class="fas fa-parachute-box"></i>
+          </div>
+          <h3>The Drop</h3>
+          <p>
+            Choose your landing spot carefully as you parachute onto the island
+          </p>
+        </div>
+        <div class="mechanic-card">
+          <div class="mechanic-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>Looting</h3>
+          <p>
+            Scavenge for weapons, armor, and supplies to increase your chances
+          </p>
+        </div>
+        <div class="mechanic-card">
+          <div class="mechanic-icon">
+            <i class="fas fa-compress-arrows-alt"></i>
+          </div>
+          <h3>The Zone</h3>
+          <p>Stay inside the play zone as it shrinks over time</p>
+        </div>
+        <div class="mechanic-card">
+          <div class="mechanic-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3>Winner Winner Chicken Dinner</h3>
+          <p>Be the last person or team standing to claim victory</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gameplay-modes">
+      <h2>Game Modes</h2>
+      <div class="modes-tabs">
+        <button class="tab-button active" onclick="openMode(event, 'classic')">
+          Classic
+        </button>
+        <button class="tab-button active" onclick="openMode(event, 'arcade')">
+          Arcade
+        </button>
+        <button class="tab-button active" onclick="openMode(event, 'tdm')">
+          Team Deathmatch
+        </button>
+        <button class="tab-button active" onclick="openMode(event, 'zombie')">
+          Zombie Mode
+        </button>
+      </div>
+
+      <div id="classic" class="tab-content" style="display: block">
+        <div class="mode-content">
+          <div class="mode-text">
+            <h3>Classic Battle Royale</h3>
+            <p>
+              The original PUBG experience. 100 players parachute onto an
+              island, scavenge for weapons and equipment, and fight to be the
+              last person standing. The playable area shrinks over time,
+              directing surviving players into tighter areas.
+            </p>
+            <ul>
+              <li>Solo, Duo, and Squad options</li>
+              <li>First-person (FPP) and third-person (TPP) perspectives</li>
+              <li>Ranked and unranked matches</li>
+            </ul>
+          </div>
+          <div class="mode-image">
+            <img
+              src="assets/images/classic.jpeg"
+              alt="Classic Mode"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="arcade" class="tab-content" style="display: block">
+        <div class="mode-content">
+          <div class="mode-text">
+            <h3>Arcade</h3>
+            <p>
+             Arcade Mode in PUBG (PlayerUnknown’s Battlegrounds) is a faster,
+             more casual alternative to the traditional Battle Royale mode. It’s designed
+              for players who want intense, short matches without spending too much time
+               looting or waiting in long lobbies.
+
+            </p>
+            <ul>
+              <li>Arcade games are much shorter, usually lasting under 10 minutes.</li>
+              <li>Fights take place in tighter, action-focused areas for more frequent encounters.</li>
+              <li>Unranked matches</li>
+            </ul>
+          </div>
+          <div class="mode-image">
+            <img
+              src="assets/images/Arcade.jpeg"
+              alt="Arcade Mode"
+            />
+          </div>
+        </div>
+      </div>
+      </div>
+
+        <div id="tdm" class="tab-content" style="display: block">
+        <div class="mode-content">
+          <div class="mode-text">
+            <h3>Team Deathmatch</h3>
+            <p>
+              Team Deathmatch (TDM) in PUBG is part of the Arcade Mode and is all
+               about fast-paced gunfights without the need for looting or survival tactics. 
+               It’s ideal for players who want to focus purely on combat skills.
+            </p>
+            <ul>
+              <li>Practice with different weapons</li>
+              <li>Improve your reflexes and recoil control</li>
+              <li>Unranked matches</li>
+            </ul>
+          </div>
+          <div class="mode-image">
+            <img
+              src="assets/images/TDM.jpeg"
+              alt="TeamDeath Match"
+            />
+          </div>
+        </div>
+      </div>
+      </div>
+
+    
+      </div>
+    </section>
+
+    <section class="weapons-section">
+      <h2>Weapons & Equipment</h2>
+      <div class="weapons-filter">
+        <button class="filter-btn active" onclick="filterWeapons('all')">
+          All
+        </button>
+        <button class="filter-btn" onclick="filterWeapons('assault')">
+          Assault Rifles
+        </button>
+        <button class="filter-btn" onclick="filterWeapons('sniper')">
+          Sniper Rifles
+        </button>
+        <button class="filter-btn" onclick="filterWeapons('smg')">SMGs</button>
+        <button class="filter-btn" onclick="filterWeapons('shotgun')">
+          Shotguns
+        </button>
+        <button class="filter-btn" onclick="filterWeapons('lmg')">LMGs</button>
+      </div>
+
+      <div class="weapons-grid">
+        <div class="weapon-card assault">
+          <img src="assets/images/akm.webp" alt="AKM" />
+          <h3>AKM</h3>
+          <p>7.62mm assault rifle with high damage but strong recoil</p>
+        </div>
+        <div class="weapon-card sniper">
+          <img src="assets/images/awm.jpeg" alt="AWM" />
+          <h3>AWM</h3>
+          <p>Bolt-action sniper rifle that can one-shot kill with a headshot</p>
+        </div>
+        <div class="weapon-card assault">
+          <img src="assets/images/M416.jpeg" alt="M416" />
+          <h3>M416</h3>
+          <p>5.56mm assault rifle with high damage but ZERO recoil</p>
+        </div>
+        <div class="weapon-card assault">
+          <img src="assets/images/ump.webp" alt="UMP" />
+          <h3>UMP</h3>
+          <p>4.52mm SMG rifle with high damage but NO recoil</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tips-section">
+      <h2>Pro Tips</h2>
+      <div class="tips-accordion">
+        <button class="accordion">Landing Strategy</button>
+        <div class="panel">
+          <p>
+            Choose your landing spot based on the plane's path. High-risk,
+            high-reward areas like military base have better loot but more
+            players. Remote areas are safer but have worse loot.
+          </p>
+        </div>
+
+        <button class="accordion">Inventory Management</button>
+        <div class="panel">
+          <p>
+            Prioritize healing items (first aid kits, medkits), ammunition for
+            your primary weapons, and throwables (grenades, smokes). Drop
+            unnecessary attachments to save space.
+          </p>
+        </div>
+
+        <button class="accordion">Zone Management</button>
+        <div class="panel">
+          <p>
+            Always be aware of the zone timer. Early game, you can loot longer.
+            Late game, position is more important than loot. Use vehicles
+            strategically but don't rely on them in final circles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+  
+    </footer>
+
+    <script src="assets/jss/style.js"></script>
+  </body>
+</html>
